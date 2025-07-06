@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sevgilim İçin</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('arka-plan.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      text-align: center;
+      padding: 40px;
+      color: #fff;
+      position: relative;
+      z-index: 0;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.2);
+      z-index: -1;
+    }
+
+    .hidden { display: none; }
+
+    input, button {
+      padding: 12px 20px;
+      font-size: 16px;
+      margin-top: 10px;
+      border-radius: 12px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff85c1;
+    }
+
+    .love-box {
+      margin-top: 30px;
+      padding: 30px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+      color: #fff;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    img {
+      max-width: 85%;
+      border-radius: 15px;
+      margin: 15px 0;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #ffe4ec;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      color: #ffd1dc;
+      margin-top: 30px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+
+    pre {
+      text-align: left;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 10px;
+      border-radius: 10px;
+      overflow-x: auto;
+      color: #ffb6c1;
+    }
+  </style>
+</head>
+<body>
+
+  <audio id="my-audio" loop class="hidden">
+    <source src="Sen Benim Şarkılarımsın.mp3" type="audio/mpeg">
+    Tarayıcınız audio elementini desteklemiyor.
+  </audio>
+
+  <h1> İçimde Saklı Tüm İyikilerin Sebebi Sensin 💗</h1>
+  <p>Doğru tarihi girersen, sana ait olan en özel şeyleri göreceksin 💌</p>
+
+  <input id="code" placeholder="GG.AA.YYYY" />
+  <button onclick="checkCode()">Gönder</button>
+
+  <div id="result" class="hidden">
+    <div class="love-box">
+
+      <h2>📝 Seni düşündüğüm her an</h2>
+      <div id="sentences" style="font-size: 1.1rem; line-height: 2; margin-top: 10px; color: #ffd1dc; text-align: left;">
+     💗 biraz daha özlüyorum seni<br>
+     💗 biraz daha içim kıpırdıyor,<br>
+     💗 biraz daha seviyorum seni<br>
+     💗 yanımda olmadığın her an senin için hatrımda olan her anıyla yaşıyorum.<br>
+     💗 seviyorum seni bir nebze daha aşkla<br>
+     💗 bir nebze daha masum bir çocuk gibi
+      </div>
+
+      <h2>🖼️ Anılarımızdan</h2>
+<video width="178" controls muted autoplay loop style="border-radius: 15px; box-shadow: 0 6px 15px rgba(0,0,0,0.3);">
+  <source src="video_1.mp4" type="video/mp4">
+  Tarayıcınız video elementini desteklemiyor.
+</video>
+
+<video width="178" controls muted autoplay loop style="border-radius: 15px; box-shadow: 0 6px 15px rgba(0,0,0,0.3);">
+  <source src="video_2.mp4" type="video/mp4">
+  Tarayıcınız video elementini desteklemiyor.
+</video>
+
+      <video width="178" controls muted autoplay loop style="border-radius: 15px; box-shadow: 0 6px 15px rgba(0,0,0,0.3);">
+  <source src="video_3.mp4" type="video/mp4">
+  Tarayıcınız video elementini desteklemiyor.
+</video>
+
+      <h2>🌟 En Özel Anımız</h2>
+      <p>Sana ilk sarıldığım o an, 14.12.23...  Her şey bir anda sessizleşti, kalbimin ritmi her an biraz daha hızlandı sadece o anı duydu kulağım sadece o anı görmek istedi gözlerim</p>
+
+      <h2>😄 Beni En Çok Güldürdüğün An</h2>
+      <p>“Benimle şakalaşman arap dediğinde bir o kadar sinirlensemde aslında bir o kadar gülüyorum, kelimeleri telafuz edemediğimde bana bakışın takıldığındaki o ifaden komik bir şey anlatışındaki hareketlerin   Ne kadar kızmaya çalışsam da gülmekten kendimi alamadım.”</p>
+
+      <h2>🫀 Neden Sen?</h2>
+      <p>
+        Çünkü yanında kendim oluyorum.<br>
+        Çünkü gözlerine bakmak kalbimi ısıtıyor.<br>
+        Çünkü seninle olmak, geçirdiğim anı özelleştiriyor.
+      </p>
+
+      <h2>💬 Son Söz:</h2>
+      <p>
+        Seni seviyorum.<br>
+        Bu sadece bir web sayfası değil... Bu benim sana duyduğum sevgiyi anlatmaya çalışan küçük bir yer.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function checkCode() {
+      const input = document.getElementById('code').value.trim();
+      if (input === '14.12.2023') {
+        document.getElementById('result').classList.remove('hidden');
+        const audio = document.getElementById("my-audio");
+        audio.classList.remove("hidden");
+        audio.volume = 0.6;
+        audio.play().catch(() => {
+          alert("Tarayıcı müziği otomatik çalmayı engelliyor olabilir. Sayfaya tıklamayı dene.");
+        });
+      } else {
+        alert("Bu kalbin şifresi yanlış olabilir... ama denemeye devam et 🗝️");
+      }
+    }
+  </script>
+</body>
+</html>
